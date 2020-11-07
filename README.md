@@ -7,6 +7,3 @@ There are four datasets:
 - FACT-SM-data
 - RST-LG-data
 - RST-SM-data
-
-The scripts for preprocessing and training we use can be found at:
-[Tree NLG repo](https://github.com/znculee/TreeNLG/tree/master/self_training/scripts)
