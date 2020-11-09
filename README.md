@@ -7,7 +7,7 @@ by Symon Jory Stevens-Guille, Aleksandre Maskharashvili, Amy Isard, Xintong Li a
 
 Bibtex will be available soon.
 
-## Data
+## Datasets
 
 There are four datasets:
 - data/RST-SM-data
@@ -19,7 +19,7 @@ There are four datasets:
 
 The code is tested on commit `3822db3` of [fairseq](https://github.com/pytorch/fairseq).
 
-## Data Preperation Steps
+## Data Preperation Steps and Training
 
 ### Pre-Processing data
 
@@ -32,7 +32,6 @@ To use either of these datasets from the folder "data", rename that dataset (e.g
 Then, run the command:     
 
 <code> bash scripts/prep_tsv.sh methodius </code>
-
 
 
 ### Preparing data for self-training
@@ -48,7 +47,7 @@ To preprocess the data, use:
 file and the rest for training, whereas in the case of LG, it will select 3000 out of 80K).
 
 
-## Training
+### Training
 
 To train vainla self trainig use:
 
@@ -61,7 +60,7 @@ To train vainla self trainig use:
 <code> bash reverseds.sh </code>
 
 
-N.B. One may run both "bash forwards.sh" and "bash reverseds.sh" silmulteniously.
+N.B. One may run both of the scripts <code> bash forwards.sh </code> and <code> bash reverseds.sh </code> silmulteniously.
 
 ## Acknowledgement
 
