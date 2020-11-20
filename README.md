@@ -75,12 +75,12 @@ After the training step, under the folder `self_training/checkpoints/methodius/p
 To find repetitions, omissions, and hallucinations (in `gen.txt`), you may run the following command:
 ```bash
 python scripts/relCountRoh_measure.py gen.txt
-```bash
+```
 
 To find how many relations a model generated correctly/incorrectly, you may run the following command:
 ```bash
 python scripts/relCountRoh_measure.py gen.txt relcount
-```bash
+```
 
 
 ## Acknowledgement
