@@ -71,6 +71,18 @@ N.B. One may run both of the scripts `bash forwards.sh` and `bash reverseds.sh` 
 
 After the training step, under the folder `self_training/checkpoints/methodius/pct-1c/` could be found generated files (`gen.txt` and `challengetestgen.txt`, which can be found by running the command `find . -iname "*gen.txt"` in the folder `self_training/checkpoints/methodius`.)
 
+## Measures of performance
+To find repetitions, omissions, and hallucinations (in `gen.txt`), you may run the following command:
+```bash
+python scripts/relCountRoh_measure.py gen.txt
+```bash
+
+To find how many relations a model generated correctly/incorrectly, you may run the following command:
+```bash
+python scripts/relCountRoh_measure.py gen.txt relcount
+```bash
+
+
 ## Acknowledgement
 
 The code is developed from [znculee/TreeNLG](https://github.com/znculee/TreeNLG).
